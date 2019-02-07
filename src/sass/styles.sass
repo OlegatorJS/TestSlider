@@ -1,0 +1,85 @@
+$content: #FFFFE5
+
+body, #slider, .container, .content
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+  width: 100%
+  height: 100vh
+  overflow-x: hidden
+
+.container
+  position: relative
+  .dot
+    width: 11px
+    height: 11px
+    background: $content
+    border-radius: 50%
+    display: inline-block
+    margin: 0 2px
+    transition: all 1s
+    cursor: pointer
+  .act
+    background: gold
+  .dots
+    text-align: center
+    position: absolute
+    bottom: 11px
+    left: 50%
+    transform: translate(-50%)
+    transition: all 1s
+  .arrow
+    cursor: pointer
+    position: absolute
+    top: 50%
+    margin-top: -50px
+    color: $content
+    font-size: 70px
+  #arrow-left
+    left: 0
+    margin-left: 30px
+  #arrow-right
+    right: 0
+    margin-right: 30px
+  .slide
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    animation: fade 1s
+    .content
+      display: flex
+      flex-direction: column
+      justify-content: top
+      align-items: left
+      text-align: center
+      span
+        font-size: 3rem
+        color: $content
+        margin: 1rem
+  .slide1
+    background-image: url('../img/1.jpg')
+  .slide2
+    background-image: url('../img/2.jpg')
+  .slide3
+    background-image: url('../img/3.jpg')
+  .slide4
+    background-image: url('../img/4.jpg')
+  .slide5
+    background-image: url('../img/5.jpg')
+  .slide6
+    background-image: url('../img/6.jpg')
+  .slide7
+    background-image: url('../img/7.jpg')
+  .slide8
+    background-image: url('../img/8.jpg')
+  .slide9
+    background-image: url('../img/9.jpg')
+  .slide10
+    background-image: url('../img/10.jpg')
+
+@keyframes fade
+  0%
+    opacity: 0.3
+  100%
+    opacity: 1
